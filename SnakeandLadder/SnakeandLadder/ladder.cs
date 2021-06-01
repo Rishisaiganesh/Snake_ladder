@@ -10,7 +10,10 @@ namespace SnakeandLadder
         {
             Console.WriteLine("Welcome to snake and ladder game ");
             int position = 0;
-            Console.WriteLine("player position is" + position);
+
+            Random random = new Random();
+            int die = random.Next(1, 6);
+            Console.WriteLine("Your number is:" + die);
 
         }
     }
