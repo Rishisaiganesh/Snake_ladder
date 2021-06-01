@@ -17,10 +17,10 @@ namespace SnakeandLadder
             Console.WriteLine("u want continue the game y/n");
             String value = Convert.ToString(Console.ReadLine());
             if (value == "y")
-         
+
             {
                 int answer = random.Next(1, 2);
-                switch(answer)
+                switch (answer)
                 {
                     case 1:
                         position = position + die;
@@ -31,23 +31,28 @@ namespace SnakeandLadder
                         {
                             Console.WriteLine("You lost the game");
                         }
-                        
                         else
-                        {
-                            position = position - die;
-                            
-                        }
-                        Console.WriteLine("......Snake bits>>>> you" + position);
-                        break;
-                    default:
-                        Console.WriteLine("NO position");
-                        break;
+                            {
+                                position = position - die;
+                            }
 
+                            Console.WriteLine("......Snake bits>>>> you" + position);
+                            break;
+                            default:
+                        Console.WriteLine("NO position");
+                            break;
+
+
+                        }
 
                 }
-
+            else
+            {
+                Console.WriteLine("if u press n the position " +position);
             }
 
+            }
         }
     }
-}
+
+
