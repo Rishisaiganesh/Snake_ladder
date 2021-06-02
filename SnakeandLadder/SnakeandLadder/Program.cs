@@ -10,6 +10,7 @@ namespace SnakeandLadder
             ladder Ladder = new ladder();
             Ladder.game();
             Ladder.CheckForOption();
+            Ladder.Winposition();
 
         }
     }

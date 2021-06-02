@@ -58,6 +58,20 @@ namespace SnakeandLadder
         }
 
 
+        int WinningPosition = 100;
+        public void Winposition()
+        {
+            if (position == WinningPosition)
+            {
+                Console.WriteLine("U Won the game");
+            }
+            if (position > WinningPosition)
+            {
+                Console.WriteLine("Better luckNext time u loss");
+            }
+            else
+                Console.WriteLine("continue the game");
 
+        }
     }
 }
