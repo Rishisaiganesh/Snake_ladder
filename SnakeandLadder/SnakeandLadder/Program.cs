@@ -9,6 +9,7 @@ namespace SnakeandLadder
             Console.WriteLine("wlecome to sanke and ladder game");
             ladder Ladder = new ladder();
             Ladder.game();
+            Ladder.CheckForOption();
 
         }
     }
